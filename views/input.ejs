@@ -1,0 +1,49 @@
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script> -->
+<button onclick="addItem()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+    function addItem() {
+        console.log("pressed submit")
+    }
+</script>
+
+<!-- <script src="./xhr.js"></script> -->
+<script>
+/*//this works
+    let xhr = new XMLHttpRequest();
+    xhr.open('get', 'http://test324324.azure-api.net/inve/page2'); //http://test324324.azure-api.net/inve/dbTest
+    xhr.send();
+
+    xhr.onload = function() {
+        console.log(xhr.response);
+    };
+
+ */
+</script>
+
+<!-- <script src="./fetchGet.js"></script> -->
+<script>
+    /*
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+        .then(response => response.json())
+        .then(json => console.log(json));
+
+     */
+    const todo = {
+        title: 'Some really important work to finish'
+    };
+
+    fetch('inventory', {
+        method: 'POST',
+        body: todo,
+        headers: {
+            'Content-type': 'application/json'
+        }
+    })
+        .then(json => {
+            console.log(json);
+        });
+</script>
