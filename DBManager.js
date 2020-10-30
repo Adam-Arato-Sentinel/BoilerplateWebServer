@@ -5,7 +5,6 @@ mongoUtil.connectToServer((err)=>{
 });
 
 
-
 //insert will be the most important. Doc is the document name, value is the json and cb is the callback.
 exports.insert=function(doc,value,cb){
     // MongoClient.connect(url, function(err, db) {
@@ -15,10 +14,15 @@ exports.insert=function(doc,value,cb){
         cb(result);
         // db.close();
     });
-
-
-    //});
 };
+
+exports.upsert=function(doc,id,value,cb){
+    db.collection(doc).update({id: id},{$set: value}, upsert=true, function (err, result) {
+        if(err)throw err;
+        cb(result);
+    });
+};
+
 
 exports.findOne=function(doc,value,cb){
     try{
@@ -31,7 +35,7 @@ exports.findOne=function(doc,value,cb){
         console.error(err);
         callback(undefined,err);
     }
-};
+}
 
 exports.find=function(doc,value,cb){
     try{

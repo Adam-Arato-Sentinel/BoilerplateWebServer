@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1597fc97-cdb6-4e4a-869d-42f96a1d74b9" name="Default Changelist" comment="" />
+    <list default="true" id="1597fc97-cdb6-4e4a-869d-42f96a1d74b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBConnection.js" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/DBManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jW4ROgP1g3uId6EtTZntPNSpHF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,6 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/nodejs-server-server-generated" />
@@ -42,6 +51,8 @@
       <updated>1603906504489</updated>
       <workItem from="1603906505523" duration="12829000" />
       <workItem from="1603919716110" duration="2208000" />
+      <workItem from="1604070985203" duration="717000" />
+      <workItem from="1604071998789" duration="8304000" />
     </task>
     <servers />
   </component>
@@ -57,22 +68,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603911779437" />
-    <state width="1899" height="416" key="GridCell.Tab.0.bottom" timestamp="1603921917878">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1771" height="276" key="GridCell.Tab.0.bottom" timestamp="1604088854311">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state width="1771" height="276" key="GridCell.Tab.0.bottom/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1031@0.23.1792.1031" timestamp="1604087748008" />
+    <state width="1771" height="276" key="GridCell.Tab.0.bottom/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1604088854311" />
     <state width="1899" height="416" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603921917878" />
-    <state width="1899" height="416" key="GridCell.Tab.0.center" timestamp="1603921917877">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1771" height="276" key="GridCell.Tab.0.center" timestamp="1604088854311">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state width="1771" height="276" key="GridCell.Tab.0.center/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1031@0.23.1792.1031" timestamp="1604087748007" />
+    <state width="1771" height="276" key="GridCell.Tab.0.center/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1604088854311" />
     <state width="1899" height="416" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603921917877" />
-    <state width="1899" height="416" key="GridCell.Tab.0.left" timestamp="1603921917877">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1771" height="276" key="GridCell.Tab.0.left" timestamp="1604088854310">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state width="1771" height="276" key="GridCell.Tab.0.left/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1031@0.23.1792.1031" timestamp="1604087748007" />
+    <state width="1771" height="276" key="GridCell.Tab.0.left/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1604088854310" />
     <state width="1899" height="416" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603921917877" />
-    <state width="1899" height="416" key="GridCell.Tab.0.right" timestamp="1603921917878">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1771" height="276" key="GridCell.Tab.0.right" timestamp="1604088854311">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state width="1771" height="276" key="GridCell.Tab.0.right/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1031@0.23.1792.1031" timestamp="1604087748008" />
+    <state width="1771" height="276" key="GridCell.Tab.0.right/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1604088854311" />
     <state width="1899" height="416" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603921917878" />
+    <state x="694" y="452" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604072875650">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="694" y="452" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.109.1920.1057/1792.96.1920.1057/0.23.1792.1031@0.23.1792.1031" timestamp="1604072875650" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1603908525573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
