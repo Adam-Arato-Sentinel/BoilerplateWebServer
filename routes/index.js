@@ -1,15 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
-var db = require('../DBManager.js')
+//var db = require('../DBManager.js')
 
 /* GET home page. */
 router.get('/page2', function(req, res, next) {
   res.render('index', { title: 'example Page 2' });
 });
+router.get('/button', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
 router.get('/', function(req, res, next) {
-  res.render('input', { title: 'Express' });
+  res.render('index', { title: 'Express' });
 });
 
 router.post("/dbTest",(req,res,next)=>{
@@ -24,7 +27,7 @@ router.post("/inventory",(req,res,next)=>{
   })
 })
  */
-
+/*
 router.post("/inventory",(req,res,next)=>{
   console.log(req.body)
   db.upsert("items", req.body.id ,req.body, function (result){
@@ -40,6 +43,8 @@ router.get("/inventory",(req,res,next)=>{
   })
 
 })
+
+ */
 
 
 module.exports = router;
