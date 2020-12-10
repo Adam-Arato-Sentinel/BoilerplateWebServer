@@ -40,10 +40,10 @@ router.delete("/resource",(req,res,next)=>{
   })
 })
 router.get("/resource",(req,res,next)=>{
-  var data = JSON.stringify(req.body);
-  fs.readFile(filename,  (err,data)=>{
-    res.send(data)
+  fs.readFile(filename, 'utf8',(err,data)=>{
+    res.send(JSON.stringify(data))
   })
+
 })
 
 
