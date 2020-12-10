@@ -1,7 +1,10 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var router = express.Router();
-
+router.use(bodyParser.urlencoded({ extended: true }));
 //var db = require('../DBManager.js')
+fs = require('fs');
+filename = "data.txt"
 
 /* GET home page. */
 router.get('/page2', function(req, res, next) {
@@ -15,9 +18,34 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post("/dbTest",(req,res,next)=>{
-  res.send("coolio")
+router.post("/resource",(req,res,next)=>{
+  var data = JSON.stringify(req.body);
+  fs.writeFile(filename, data, ()=>{
+    res.send(data+ " was saved")
+  })
+
 })
+
+router.put("/resource",(req,res,next)=>{
+  var data = JSON.stringify(req.body);
+  fs.appendFile(filename, data, ()=>{
+    res.send(data+ " was appended")
+  })
+})
+
+router.delete("/resource",(req,res,next)=>{
+
+  fs.writeFile(filename, "", ()=>{
+    res.send("file was wiped")
+  })
+})
+router.get("/resource",(req,res,next)=>{
+
+  fs.readFile(filename,  (err,data)=>{
+    res.send(data)
+  })
+})
+
 
 /*
 router.post("/inventory",(req,res,next)=>{
